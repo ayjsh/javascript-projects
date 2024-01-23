@@ -1,7 +1,7 @@
 // Initialize Variables below
 let date = "Monday 2019-03-18";
 let time = "10:05:34 AM";
-let astronautCount = 10;
+let astronautCount = 7;
 let astronautStatus = "ready";
 let averageAstronautMassKg = 80.7;
 let crewMassKg = astronautCount * averageAstronautMassKg;

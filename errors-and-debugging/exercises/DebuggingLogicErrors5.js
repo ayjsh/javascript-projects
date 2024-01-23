@@ -4,7 +4,7 @@
 
 let launchReady = false;
 let crewReady = false;
-let fuelLevel = 30000;
+let fuelLevel = 17000;
 let crewStatus = true;
 let computerStatus = 'green';
 

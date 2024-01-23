@@ -18,3 +18,10 @@ if (engineIndicatorLight === "green") {
    console.log("engines are off");
 }
 
+let num = 0;
+
+if (num % 2 === 0) {
+   if (num % 2 === 1) {
+       console.log("odd");
+   }
+}
