@@ -1,6 +1,18 @@
 //We want to COMPLETELY reverse an array by flipping the order of the entries AND flipping the order of characters in each element.
 
 // Part One: Reverse Characters
+function reverseCharacters(str) {
+    if (typeof str === String) {
+    let reversed = str.split('').reverse().join('')
+    return reversed;
+    } else {
+    let reversed = str.toString().split('').reverse().join('')
+    Number(reversed)
+    return reversed;
+    }
+}
+let toBeReversed = ('cat');
+console.log(reverseCharacters(toBeReversed));
 
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
 // 2. Within the function, split the string into an array, then reverse the array.
@@ -18,7 +30,14 @@
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
 
 // Part Three: Complete Reversal
-
+function reversedAll(arr){
+    let reversedArr = [];
+    for (let i = 0; i < arr.length; i++) {
+    unreversed = reverseCharacters(arr[i])  
+    reversedArr.push(unreversed);
+}
+return reversedArr.reverse();
+}
 // 1. Define and initialize an empty array.
 // 2. Loop through the old array.
 // 3. For each element in the old array, call reverseCharacters to flip the characters or digits.
@@ -30,7 +49,21 @@ let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
+console.log(reversedAll(arrayTest1));
+console.log(reversedAll(arrayTest2));
+console.log(reversedAll(arrayTest3));
+    
 // Bonus Missions
+
+function funPhrase (str) {
+    if (str.length <= 3) {
+        return str.charAt(str.length-1)
+    } else {
+        shortString = str.slice(0,3)
+        console.log(`We put the ${shortString} in ${str}.`);
+    }
+}
+funPhrase('caterpillar');
 
 // 1. Have a clear, descriptive name like funPhrase.
 // 2. Retrieve only the last character from strings with lengths of 3 or less.
@@ -43,6 +76,16 @@ let arrayTest3 = ['hello', 'world', 123, 'orange'];
 // 2. Call your function and print the returned phrase.
 
 // Area of rectangle equal to length x width
+function equalRectangle(length, width){
+    if (typeof width === 'undefined'){
+        width = length;
+    } else {
+        width = width;
+    }
+    console.log(`The area is ${length*width} cm^2.`) ;
+}
+
+equalRectangle(20, 10);
 
 // 1. Define a function with the required parameters to calculate the area of a rectangle.
 // 2. The function should return the area, NOT print it.
