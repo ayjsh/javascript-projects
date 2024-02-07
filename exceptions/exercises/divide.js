@@ -5,3 +5,9 @@
 // However, if the denominator is zero you should throw the error, "Attempted to divide by zero."
 
 // Code your divide function here:
+ function divide(num, den){
+    if (den === 0){
+    throw Error("You cannot divide by zero!");
+    } 
+    return num/den;
+ }
